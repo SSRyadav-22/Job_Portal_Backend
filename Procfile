@@ -1,1 +1,1 @@
-web: bash -lc 'exec gunicorn jobPortal.wsgi:application --bind 0.0.0.0:8000'
+web: gunicorn jobPortal.wsgi:application --bind 0.0.0.0:$PORT'
